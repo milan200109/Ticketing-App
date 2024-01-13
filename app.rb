@@ -1,5 +1,5 @@
 require 'sinatra'
 
 get '/' do
-  'Hello, Ticketing App!'
+  'Hello, Welcome to Ticketing App!'
 end
