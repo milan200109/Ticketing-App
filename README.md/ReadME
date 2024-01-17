@@ -1,0 +1,5 @@
+# Ticketing App
+
+* This is a simple ticketing application built with Sinatra.
+
+* The Ticketing App allows users to raise tickets and check their status, along with resolutions.
