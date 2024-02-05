@@ -1,14 +1,13 @@
-# app.rb
+# routes/main_routes.rb
 
 require 'sinatra'
 
-# Homepage route
 get '/' do
   'Hello, this is your ticketing app!'
 end
 
-# Submit a ticket route
 post '/submit_ticket' do
   ticket = params[:ticket]
   "Received ticket: #{ticket}"
 end
+
