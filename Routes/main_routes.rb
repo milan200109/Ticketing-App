@@ -3,7 +3,7 @@
 require 'sinatra'
 
 get '/' do
-  'Hello, this is your ticketing app!'
+  'Hello, welcome to ticketing app!'
 end
 
 post '/submit_ticket' do
