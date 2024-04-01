@@ -50,14 +50,14 @@ get '/tickets/:id' do |id|
   end
 end
 
-# Endpoint to update a ticket by ID
+# update a ticket by ID
 put '/tickets/:id' do |id|
-  # Find the ticket with the specified ID
+  # to Find the ticket with the ID
   ticket_index = tickets.find_index { |t| t[:id] == id }
 
   # Update the ticket if found
   if ticket_index
-    # Parse JSON request body
+    
     request_body = JSON.parse(request.body.read)
 
     # Update ticket attributes
@@ -74,7 +74,7 @@ put '/tickets/:id' do |id|
   end
 end
 
-# Endpoint to delete a ticket by ID
+# to delete a ticket by ID
 delete '/tickets/:id' do |id|
   # Find the ticket with the specified ID
   ticket = tickets.find { |t| t[:id] == id }
